@@ -1,28 +1,13 @@
 <!--
 ---
-name: I2C
-class: interface
-type: pinout
 description: Raspberry Pi pin i2c
-url: http://www.raspberry-projects.com/pi/programming-in-python/i2c-programming-in-python/using-the-i2c-interface-2
 pin:
   '3':
     name: Dati
-    direction: both
-    active: high
-  '5':
-    name: Clock
-    direction: both
-    active: high
   '27':
     name: Dati EEPROM
-    direction: both
-    active: high
   '28':
     name: Clock EEPROM
-    direction: both
-    active: high
-
 -->
 # I2C - Inter Integrated Circuit
 
@@ -37,18 +22,3 @@ sudo apt-get install i2c-tools
 sudo i2cdetect -y 1
 ```
 
-Puoi accedere ad i2c da Python usando la libreria smbus:
-
-```bash
-sudo apt-get install python-smbus
-```
-
-E poi sempre in Python:
-
-```python
-import smbus
-DEVICE_BUS = 1
-DEVICE_ADDR = 0x15
-bus = smbus.SMBus(DEVICE_BUS)
-bus.write_byte_data(DEVICE_ADDR, 0x00, 0x01)
-```

@@ -20,6 +20,7 @@ strings:
 - uses_3v3: 'alimentation 3v3'
 - uses_n_gpio_pins: '{} broches GPIO actives'
 - bcm_pin_rev1_pi: 'broche BCM {} sur Raspi Rev 1'
+- supported_on: 'Supported on {}'
 - physical_pin_n: 'broche physique {}'
 - wiring_pi_pin: 'broche Wiring Pi {}'
 - made_by: 'fabriqué par {manufacturer}'
@@ -28,6 +29,10 @@ strings:
 - board_schematic : 'schéma'
 - buy_now: 'achat'
 - browse_addons: 'Voir toutes les cartes disponibles'
+- pin_functions: 'Alternate functions by model'
+- mirror_pinout: 'Mirror the pinout, as seen from the underside of the board'
+- rotate_pinout: 'Rotate the pinout 180 degrees'
+- choose_language: 'Choisir une langue'
 - return_home: 'Retour à l''accueil'
 - boards_title: "Cartes d'extension pour la Raspberry Pi"
 - boards_subtitle: "Cliquez sur une carte ci-dessous pour en révéler tous les détails!"

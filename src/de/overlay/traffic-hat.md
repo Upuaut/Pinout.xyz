@@ -1,35 +1,15 @@
 <!--
 ---
-name: Traffic HAT
-class: board
-type: multi
-formfactor: HAT
-manufacturer: Ryanteck
 description: Ein schneller und einfacher Weg um die grundlegenden Fähigkeiten der GPIO-Ports zu erkunden.
-image: 'traffic-hat.png'
-pincount: 40
-eeprom: yes
 pin:
   '15':
     name: LED1 / Grün
-    direction: output
-    active: high
   '16':
     name: LED2 / Orange
-    direction: output
-    active: high
   '18':
     name: LED3 / Rot
-    direction: output
-    active: high
   '22':
     name: Taster
-    direction: input
-    active: high
-  '29':
-    name: Buzzer
-    direction: output
-    active: high
 -->
 # Traffic HAT
 

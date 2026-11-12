@@ -3,7 +3,6 @@ name: Pages
 on:
   push:
     branches:
-      - master
       - main
 
 jobs:
@@ -12,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python 3.11
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: 3.11
 
@@ -25,15 +24,14 @@ jobs:
 
       - name: Build Packages
         run: |
-          make LANG=en
-          cp -r phatstack output/en
+          make dist
           make -C api
-          cp -r api/v1 output/en
-          cp api/index.png output/en/v1/img/
+          cp -r api/v1 output/site
+          cp api/index.png output/site/v1/img/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
             github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: ./output/en
+            publish_dir: ./output/site
             cname: pinout.xyz

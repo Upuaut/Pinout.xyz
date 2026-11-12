@@ -1,80 +1,91 @@
 			<aside>
-				<nav id="gpio">
+				<nav id="gpio" aria-label="{{strings:gpio_header}}">
 					{{nav}}
 				</nav>
+				<div id="pinout-view" hidden>
+					<button type="button" class="mirror" aria-pressed="false" title="{{strings:mirror_pinout}}">
+						<svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false">
+							<path d="M10 1.5v17" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2" />
+							<path d="M7.5 4.5 2 10l5.5 5.5z" fill="currentColor" />
+							<path d="M12.5 4.5 18 10l-5.5 5.5z" fill="none" stroke="currentColor" stroke-width="1.5" />
+						</svg>
+						<span>{{strings:mirror_pinout}}</span>
+					</button>
+					<button type="button" class="rotate" aria-pressed="false" title="{{strings:rotate_pinout}}">
+						<svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true" focusable="false">
+							<path d="M16.5 10a6.5 6.5 0 1 1-2.9-5.4" fill="none" stroke="currentColor" stroke-width="1.8" />
+							<path d="M15.2 1.6v4h-4z" fill="currentColor" />
+						</svg>
+						<span>{{strings:rotate_pinout}}</span>
+					</button>
+				</div>
 				<div id="legend">
 					<div>
 						<h2>Legend</h2>
 						<p>Orientate your Pi with the GPIO on the right and the HDMI port(s) on the left.</p>
 						<ul>
 							<li class="gpio">
-								<a href="/pinout/wiringpi" title="GPIO (General Purpose IO)">
+								<a href="{{settings:base_url}}{{settings:url_gpio}}" title="GPIO (General Purpose IO)">
 									<span class="default"></span>
 									<span class="pin"></span> GPIO <small>(General Purpose IO)</small>
 								</a>
 							</li>
 							<li class="spi">
-								<a href="/pinout/spi" title="SPI (Serial Peripheral Interface)">
+								<a href="{{settings:base_url}}spi" title="SPI (Serial Peripheral Interface)">
 									<span class="default"></span>
 									<span class="pin"></span> SPI <small>(Serial Peripheral Interface)</small>
 								</a>
 							</li>
 							<li class="i2c">
-								<a href="/pinout/i2c" title="I2C (Inter-integrated Circuit)">
+								<a href="{{settings:base_url}}i2c" title="I2C (Inter-integrated Circuit)">
 									<span class="default"></span>
 									<span class="pin"></span> I<sup>2</sup>C <small>(Inter-integrated Circuit)</small>
 								</a>
 							</li>
 							<li class="uart">
-								<a href="/pinout/uart" title="UART (Universal Asynchronous Receiver/Transmitter)">
+								<a href="{{settings:base_url}}uart" title="UART (Universal Asynchronous Receiver/Transmitter)">
 									<span class="default"></span>
 									<span class="pin"></span> UART <small>(Universal Asynchronous Receiver/Transmitter)</small>
 								</a>
 							</li>
 							<li class="pcm">
-								<a href="/pinout/pcm" title="PCM (Pulse Code Modulation)">
+								<a href="{{settings:base_url}}pcm" title="PCM (Pulse Code Modulation)">
 									<span class="default"></span>
 									<span class="pin"></span> PCM <small>(Pulse Code Modulation)</small>
 								</a>
 							</li>
 							<li class="gnd">
-								<a href="/pinout/ground" title="Ground">
+								<a href="{{settings:base_url}}{{settings:url_ground}}" title="Ground">
 									<span class="default"></span>
 									<span class="pin"></span> Ground
 								</a>
 							</li>
 							<li class="pow5v">
-								<a href="/pinout/5v_power" title="5v (Power)">
+								<a href="{{settings:base_url}}{{settings:url_5v}}" title="5v (Power)">
 									<span class="default"></span>
 									<span class="pin"></span> 5v <small>(Power)</small>
 								</a>
 							</li>
 							<li class="pow3v3">
-								<a href="/pinout/3v3_power" title="3.3v (Power)">
+								<a href="{{settings:base_url}}{{settings:url_3v3}}" title="3.3v (Power)">
 									<span class="default"></span>
 									<span class="pin"></span> 3.3v <small>(Power)</small>
 								</a>
 							</li>
 						</ul>
 					</div>
-					<img src="{{resource_url}}pi-orientation.svg" alt="Orient your Pi facing up, such that the GPIO on the right and HDMI port(s) are on the left." width="196" height="297" />
+					<img class="pi-orientation" src="{{resource_url}}pi-orientation.svg" alt="Orient your Pi facing up, such that the GPIO on the right and HDMI port(s) are on the left." width="196" height="297" />
 				</div>
 			</aside>
 			<div id="interfaces">
 				<div>
-					Use code "pinout" for, <a href="https://www.pcbway.com/?from=pinout.xyz02">$10 off $30 at <strong>PCBWay</strong></a>
-					<small>Limited to 50 redemptions, one per account</small>
+					Support me: <a href="https://www.pcbway.com/?from=pinout.xyz04">Build your first project with <strong>PCBWay</strong></a>
 				</div>
 				<ul>
 				{{interfaces}}
 				</ul>
 			</div>
 			{{crumbtrail}}
-			<section>
-				<div id="featured">
-					<ul>
-					{{featured_boards}}
-					</ul>
-				</div>
+			<section id="content" tabindex="-1">
 				{{content}}
 			</section>

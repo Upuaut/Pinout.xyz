@@ -2,7 +2,7 @@
 ---
 name: Uputronics Pi HX1 Expansion Board 
 class: board
-type: Radio
+type: radio
 formfactor: HAT
 manufacturer: Uputronics
 description: HX1 Expansion board for Raspberry Pi
@@ -32,5 +32,9 @@ pin:
     name: HX1 ENABLE
 -->
 # Uputronics HX1 Board
+
+RETIRED - NO LONGER SOLD
+
+<a href="https://store.uputronics.com/products/flextrak-raspberry-pi-kit">Replaced by FlexTrak</a>
 
 A simple board to permit attachment of a Radiometrix HX1 300mW radio module to a Pi. Can be used to transmit APRS when used with a Pi In The Sky board.

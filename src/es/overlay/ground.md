@@ -1,18 +1,7 @@
 <!--
 ---
 name: Masa
-class: interface
-type: pinout
 description: Pines de masa de Raspberry Pi
-pin:
-  '6':
-  '9':
-  '14':
-  '20':
-  '25':
-  '30':
-  '34':
-  '39':
 -->
 # Masa
 

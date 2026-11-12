@@ -1,28 +1,9 @@
 <!--
 ---
-name: Unicorn HAT
-class: board
-type: led
-formfactor: HAT
-manufacturer: Pimoroni
 description: une matrice 8x8 de LEDs RGB
-url: http://shop.pimoroni.com/products/unicorn-hat
-github: https://github.com/pimoroni/unicornhat
-buy: http://shop.pimoroni.com/products/unicorn-hat
-image: 'unicorn-hat.png'
-pincount: 40
-eeprom: setup
-power:
-  '2':
-ground:
-  '9':
 pin:
   '12':
     name: données
-    direction: output
-    mode: pwm
-    active: high
-    description: WS2812 Data
 -->
 # Unicorn HAT
 

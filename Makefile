@@ -4,27 +4,39 @@ LANG := $(subst -, ,$(LANG))
 LANG := $(subst _, ,$(LANG))
 LANG := $(firstword $(LANG))
 
-.PHONY: resources
+PYTHON ?= python3
+PINOUTXYZ := $(PYTHON) -m pinoutxyz
 
-all: html resources
+.PHONY: all deps html site dist serve watch translations check links clean
+
+all: site
 
 deps:
-	python3 -m pip install -r requirements.txt
-
-css:
-	scss resources/pinout.scss > resources/pinout.scss.css
+	$(PYTHON) -m pip install -r requirements.txt
 
 html:
-	./generate-html.py $(LANG)
+	$(PINOUTXYZ) build $(LANG)
 
-resources:
-	cp -r resources phatstack output/$(LANG)/
+site:
+	$(PINOUTXYZ) build --site
 
-devel: css all resources
-	./serve.py ${LANG}
+dist:
+	$(PINOUTXYZ) build --site --minify
+
+serve:
+	$(PINOUTXYZ) serve --lang $(LANG)
+
+watch:
+	$(PINOUTXYZ) serve --lang $(LANG) --watch
+
+translations:
+	$(PINOUTXYZ) translations list
+
+check:
+	$(PINOUTXYZ) translations check
+
+links:
+	$(PINOUTXYZ) links check
 
 clean:
-	rm -rf output/$(LANG)/*
-
-serve: all
-	./serve.py $(LANG)
+	rm -rf output

@@ -1,11 +1,10 @@
-domain: es.pinout.xyz
+domain: pinout.xyz
+language: Español
+locale: es_ES
+flag: es
+site_url: '/es'
 base_url: /pinout/
 resource_url: /resources/
 url_suffix:
 urls:
   GND: masa
-featured:
-- ab-adc-pi-zero
-- analog-zero
-- piborg-ledborg
-- pibrella

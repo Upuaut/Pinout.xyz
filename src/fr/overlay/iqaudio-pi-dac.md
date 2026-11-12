@@ -1,41 +1,15 @@
 <!--
 ---
-name: "Pi-DAC+"
-class: board
-type: audio
-formfactor: HAT
-manufacturer: IQaudIO
 description: Convertisseur numérique-analogique pour la Raspberry Pi
-url: http://www.iqaudio.co.uk/audio/8-pi-dac-0712411999650.html
-buy: http://www.iqaudio.co.uk
-image: 'iqaudio-pi-dac.png'
-pincount: 40
-eeprom: yes
 pin:
-  '3':
-    mode: i2c
-  '5':
-    mode: i2c
-  '12':
-    name: I2S
   '15':
     name: silence
-    description: pour le Pi-AMP+ (option)
   '16':
     name: encodeur rotatif
-    description: (option)
   '18':
     name: encodeur rotatif
-    description: (option)
   '22':
     name: capteur IR
-    description: (option)
-  '35':
-    name: I2S
-  '38':
-    name: I2S
-  '40':
-    name: I2S
 -->
 # IQaudIO Pi-DAC+
 

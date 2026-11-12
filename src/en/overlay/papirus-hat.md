@@ -8,10 +8,10 @@ manufacturer: Pi Supply
 description: PaPiRus is an ePaper / eInk screen HAT module for the Raspberry Pi
 url: https://www.kickstarter.com/projects/pisupply/papirus-the-epaper-screen-hat-for-your-raspberry-p
 github: https://github.com/PiSupply/PaPiRus
-buy: https://www.pi-supply.com/product/papirus-epaper-eink-screen-hat-for-raspberry-pi/
 image: 'papirus-hat.png'
 pincount: 40
 eeprom: yes
+dtoverlay: papirus,panel=e2271cs021
 power:
   '1':
   '2':
@@ -96,6 +96,8 @@ Unlike conventional displays, ePaper reflects light, and is capable of holding t
 * GPIO breakout connector and solder pads
 * Optional reset pin header (for wake on alarm with RTC)
 * 4 x optional slimline switches on top
+
+The `panel` parameter is required and must match the screen fitted: 1.44": `e1144cs021`, 2.0": `e2200cs021`, 2.7": `e2271cs021`.
 
 To get the HAT set up and ready to go you can use the one-line product installer:
 

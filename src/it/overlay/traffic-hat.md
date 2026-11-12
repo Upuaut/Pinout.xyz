@@ -1,35 +1,17 @@
 <!--
 ---
-name: Traffic HAT
-class: board
-type: Tutti
-formfactor: HAT
-manufacturer: Ryanteck
 description: Una maniera facile e veloce per imparare le basi del GPIO a basso prezzo. Tutto in un singolo HAT.
-image: 'traffic-hat.png'
-pincount: 40
-eeprom: yes
 pin:
   '15':
     name: LED1 / verde
-    direction: output
-    active: high
   '16':
     name: LED2 / ambra
-    direction: output
-    active: high
   '18':
     name: LED3 / rosso
-    direction: output
-    active: high
   '22':
     name: Bottone
-    direction: input
-    active: high
   '29':
     name: Buzzer - cicalino
-    direction: output
-    active: high
 -->
 # Traffic HAT
 

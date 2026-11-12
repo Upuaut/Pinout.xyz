@@ -2,12 +2,11 @@
 ---
 name: Uputronics Pi In The Sky Board
 class: board
-type: gps,Radio
+type: gps,radio
 formfactor: HAT
 manufacturer: Uputronics
 description: Radio telemetry board for Raspberry Pi
 url: http://www.pi-in-the-sky.com/
-buy: https://store.uputronics.com/index.php?route=product/product&path=62&product_id=52
 github: https://github.com/piinthesky
 schematic: https://github.com/PiInTheSky/pits-hardware/blob/master/PiInTheSky-Mainboard-v2.4.sch
 image: 'uputronics-pits.png'
@@ -31,9 +30,10 @@ pin:
   '5':
     mode: i2c
   '8':
-    mode: UART/MTX2 TXD
+    name: MTX2 TXD
+    mode: uart
   '10':
-    mode: UART
+    mode: uart
   '38':
     name: PPS
   '7':
@@ -54,6 +54,10 @@ i2c:
     device: MAXIM MCP3426
 -->
 # Uputronics Pi In The Sky Board
+
+RETIRED - NO LONGER SOLD
+
+<a href="https://store.uputronics.com/products/flextrak-raspberry-pi-kit">Replaced by FlexTrak</a>
 
 Telemetry board designed for use on high altitude balloons. Features Ublox MAX-M8Q, Radiometrix MTX2 434MHz radio transmitter, efficient 2A buck/boost, I2C ADC and One Wire temperature sensor.
 

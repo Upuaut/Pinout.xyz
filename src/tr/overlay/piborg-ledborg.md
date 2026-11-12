@@ -1,32 +1,6 @@
 <!--
 ---
-name: LEDBorg
-class: board
-type: hepsi
-formfactor: diğer
-manufacturer: PiBorg
 description: Raspberry Pi RGB ledlerine sahip bir kart
-url: https://www.piborg.org/ledborg-new/install
-buy: https://www.piborg.org/ledborg
-image: 'piborg-led-borg.png'
-pincount: 26
-eeprom: no
-pin:
-  '11':
-    name: Red LED
-    direction: output
-    active: high
-    description: PiBorg Red LED
-  '13':
-    name: Green LED
-    direction: input
-    active: high
-    description: PiBorg Green LED
-  '15':
-    name: Blue LED
-    direction: output
-    active: high
-    description: PiBorg Blue LED
 -->
 # PiBorg LedBorg
 

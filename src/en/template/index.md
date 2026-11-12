@@ -6,27 +6,24 @@ This GPIO Pinout is an interactive reference to the Raspberry Pi GPIO pins, and 
 
 ## Other Pinouts
 
-We've created Pinouts for the Raspberry Pi Pico range of boards, too, you can find them here:
+We've created Pinouts for the Raspberry Pi Pico range of boards, you can find them here:
 
 * [Raspberry Pi Pico Pinout](https://pico.pinout.xyz)
 * [Raspberry Pi Pico W Pinout](https://picow.pinout.xyz)
 * [Raspberry Pi Pico 2 Pinout](https://pico2.pinout.xyz)
+* [Raspberry Pi Pico 2 W Pinout](https://pico2w.pinout.xyz)
 
 Plus chip planners for the RP2350A and RP2350B chips:
 
 * [Raspberry Pi RP2350A QFN-60 Pinout](https://rp2350a.pinout.xyz)
 * [Raspberry Pi RP2350B QFN-80 Pinout](https://rp2350b.pinout.xyz)
 
-And some experimental pinouts, too:
+And some experimental pinouts:
 
 * [Minimal Raspberry Pi 40-pin Pinout](https://pi.pinout.xyz)
 * [Espressif ESP32 C5 DevKitC Pinout](https://esp32c5.pinout.xyz)
 * [Espressif ESP32 C3 DevKitC Pinout](https://esp32c3.pinout.xyz)
 * [PJRC Teensy 4.0 Pinout](https://teensy40.pinout.xyz)
-
-## pHAT Stack
-
-Pinout has teamed up with Pimoroni to create a [prototype board compatibility tool, check it out here!](/phatstack)
 
 ## Explore HATs & pHATs
 
@@ -36,15 +33,5 @@ Pinout has teamed up with Pimoroni to create a [prototype board compatibility to
 
 * GPIO - General Purpose Input/Output, aka "BCM" or "Broadcom". These are the big numbers, e.g. "GPIO 22". You'll use these with RPi.GPIO and GPIO Zero.
 * Physical - or "Board" correspond to the pin's physical location on the header. These are the small numbers next to the header, e.g. "Physical Pin 15".
-* WiringPi - for Gordon Henderson's Wiring Pi library. These are shown as a tooltip when you mouseover a pin.
-* Rev 1 Pi - alternate GPIO/BCM numbers for the original, 26-pin model "A" and "B" Pi.
-
-## What's the orientation of this pinout?
-
-Pinout depicts pin 1 in the top left corner. Pin 1 is the only pin with a square solder pad, which may only be visible from the underside of your Pi. If you orient your Pi such that you are looking at the top with the GPIO on the right and HDMI port(s) on the left, your orientation will match Pinout.
-
-## Graphical Pinout
-
-We've whipped up a simple graphical Raspberry Pi GPIO Pinout. Feel free to print, embed, share or hotlink this image and don't forget to credit us!
-
-![Graphical Raspberry Pi GPIO Pinout](https://raw.githubusercontent.com/pinout-xyz/Pinout.xyz/master/resources/raspberry-pi-pinout.png)
+* WiringPi - for the Wiring Pi library. These are shown as a tooltip when you mouseover a pin.
+* Rev 1 Pi - alternate GPIO/BCM numbers for the original, 26-pin model "A" and "B" Pi. The 40-pin header is a superset of that 26-pin one: pins 1 to 26 carry the same signals, so a 26-pin board or wiring diagram still applies.

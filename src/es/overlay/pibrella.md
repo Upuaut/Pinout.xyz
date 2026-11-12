@@ -1,71 +1,33 @@
 <!--
 ---
-name: Pibrella
-class: board
-type: io,multi
-formfactor: Otro
-manufacturer: Cyntech
-collected: Otro
 description: Luz, sonido, entradas y salidas en una placa.
-url: http://pibrella.com
-github: https://github.com/pimoroni/pibrella
-buy: https://shop.cyntech.co.uk/products/pibrella?variant=581387897
-image: 'pibrella.png'
-pincount: 26
-eeprom: no
 pin:
   '7':
     name: LED Verde
-    direction: salida
-    active: alto (encendido)
   '11':
     name: LED Amarillo
-    direction: salida
-    active: alto (encendido)
   '12':
     name: Zumbador
-    direction: salida
-    active: alto (encendido)
   '13':
     name: LED Rojo
-    direction: salida
-    active: alto (encendido)
   '15':
-    name: Salida A
-    direction: salida
-    active: alto (encendido)
+    name: Salida E
   '16':
-    name: Salida B
-    direction: salida
-    active: alto (encendido)
+    name: Salida F
   '18':
-    name: Salida C
-    direction: salida
-    active: alto (encendido)
+    name: Salida G
   '19':
     name: Entrada D
-    direction: salida
-    active: alto (encendido)
   '21':
     name: Entrada A
-    direction: input
-    active: alto (encendido)
   '22':
-    name: Salida D
-    direction: salida
-    active: alto (encendido)
+    name: Salida H
   '23':
     name: Botón
-    direction: input
-    active: alto (encendido)
   '24':
     name: Entrada C
-    direction: input
-    active: alto (encendido)
   '26':
     name: Entrada B
-    direction: input
-    active: alto (encendido)
 -->
 # Pibrella
 
